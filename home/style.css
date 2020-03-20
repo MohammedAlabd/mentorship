@@ -1,31 +1,51 @@
 nav {
   box-shadow: none;
 }
-nav ul a {
+
+nav ul a,
+.loginBtn {
   color: #f44336;
   font-size: 15px;
 }
+
+.loginBtn,
+.loginBtn:hover {
+  font-weight: 700;
+  border: 0;
+  background: transparent;
+}
+
 .box-content {
   border-radius: 20px;
   padding: 10px;
 }
+
 .conatinerMine {
   margin-bottom: 0;
 }
+
 .box-content h5 {
   font-weight: 500;
   padding-bottom: 8px;
 }
+
 .box-content h5,
 .box-content p,
 .box-content span {
   color: #fff;
 }
+
 .box-content ul li a {
   color: black;
   background-color: #fff;
   border-radius: 5px;
   padding: 5px;
+}
+
+.modal-content h4,
+.modal-content h5,
+.tagWord {
+  font-weight: 500;
 }
 
 .modal-content ul li a {
@@ -65,9 +85,19 @@ p.location {
   margin-left: 5px;
   vertical-align: middle;
 }
+
+.social {
+  display: flex;
+}
+
+.social a {
+  margin-left: 2%;
+}
+
 .iconMine {
   vertical-align: middle;
 }
+
 .infoBtn {
   border-radius: 20px;
   height: 44px;
@@ -80,8 +110,33 @@ p.location {
   width: 32px;
 }
 
+.hidden {
+  display: none !important;
+}
+
 @media only screen and (max-width: 600px) {
   .valign-wrapper {
     display: block;
   }
+}
+
+.trashIcon {
+  font-size: 25px;
+  position: absolute;
+  top: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  color: red;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+.penIcon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#iconSpan {
+  position: absolute;
+  left: auto;
+  right: 60px;
 }
